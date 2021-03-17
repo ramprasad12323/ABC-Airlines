@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Incorrect</title>
+	<link rel="stylesheet" href="{% static 'style3.css'%}">
+	<style> 
+		body {
+			background: url("{% static '3.jpg'%}") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font-family: Tahoma,sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<p><span style="color:red;font-weight:bold;font-size: 50px;font-family: Tahoma,sans-serif;">ABC</span> 
+		<span style="color:lightblue;font-weight:bold;font-size: 20px;font-family: Tahoma,sans-serif;">Airline</span>
+	</p>
+	<center>
+		<h2><span style="color:white;opacity: 0.8;">User Already Registered!!Please Login...</span></h2>
+		<a type="submit" href= "/login/" class="button">Login</a>
+	</center>
+</body>
+</html>
