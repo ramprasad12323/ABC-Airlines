@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABC Airline - Register</title>
+	<link rel="stylesheet" href="{% static 'style2.css'%}">
+	<style> 
+		body {
+			background-image: url("{% static '2.jpg'%}");
+			font-family: Tahoma,sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<p><span style="color:red;font-weight:bold;font-size: 50px;font-family: Tahoma,sans-serif;">ABC</span> 
+		<span style="color:lightblue;font-weight:bold;font-size: 20px;font-family: Tahoma,sans-serif;">Airline</span>
+	</p>
+	<center>
+		<div class="regblock">
+			<div class="reg-form">
+				<h2><span style="color:red;font-weight:bold;opacity: 0.80;font-family: Tahoma,sans-serif;font-size: 25px">Passenger Registration</span></h2>
+		<form action="/register/" method="POST">
+			{%csrf_token%}
+			<table>
+				<tr>
+					<td><span style="color:white;opacity: 0.80;">Name :</span></td>
+					<td>
+						<input type="text" name="pass_name" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td><span style="color:white;opacity: 0.80;">Email : </span></td>
+					<td>
+						<input type="text" name="pass_email" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td><span style="color:white;opacity: 0.80;">Password : </span></td>
+					<td>
+						<input type="Password" name="pass_pass" required>
+					</td>
+				</tr>
+			</div>
+
+				<tr>
+					<td><span style="color:white;opacity: 0.80;">Address : </span></td>
+					<td>
+						<div class="add">
+							<br> <textarea rows="4" cols=default name="pass_address" required></textarea>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td><span style="color:white;opacity: 0.80;">Contact No. : </span></td>
+					<td>
+						<input type="text" name="pass_contact" required>
+					</td>
+				</tr>
+
+			</table>
+				
+			<center>
+				<br><br><input type="submit" value="Register" class="button">
+		</form>
+
+				<h2><span style="color:red;font-weight:bold;opacity: 0.8">Existing User</span></h2>
+				<a type="submit" href= "/login/" class="button">Login</a><br><br>	
+			</center>
+
+		</div>
+	</center>
+
+
+</body>
+</html>
