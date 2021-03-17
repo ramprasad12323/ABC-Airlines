@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ABC Airline - Book Ticket</title>
+		<link rel="stylesheet" href="{% static 'style6.css'%}">
+	<style>
+		body {
+			background: url("{% static '6.jpg'%}") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font-family: Tahoma,sans-serif;
+		}
+	</style>
+	</head>
+	<body>
+		<p><span style="color:red;font-weight:bold;font-size: 50px;">ABC</span> 
+			<span style="color:lightblue;font-weight:bold;font-size: 20px;">Airline</span>
+			</p>
+		<center>
+			<div class="book">
+		<form action="/book/" method="POST">
+			{%csrf_token%}
+
+			<h1><span style="color:red;">Ticket Booking</span></h1>
+			<table class="details">
+
+			<tr>
+				<td><span style="color:white;">Travel Date :</span></td>
+				<td>
+					<br><input type="date" name="date" required min="2021-01-01" max="2021-12-31"  >
+				</td>
+			</tr>
+
+			<tr>
+				<td><span style="color:white;">Source Airport :</span></td>
+				
+				<td>
+				<br><select name="source" required>
+					<option value="Trivandrum">Trivandrum</option>
+					<option value="Cochin">Cochin</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="Varanasi">Varanasi</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Visakhapatnam">Visakhapatnam</option>
+				</select>
+				</td>
+			  
+			</tr>
+
+			<tr>
+				<tr>
+				<td><span style="color:white;">Destination Airport :</span></td>
+				<td>
+				<br><select name="destination" required>
+					<option value="Trivandrum">Trivandrum</option>
+					<option value="Cochin">Cochin</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="Varanasi">Varanasi</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Visakhapatnam">Visakhapatnam</option>
+				</select>
+				</td>
+			</tr>
+
+			<tr>
+            	<td><span style="color:white;">Seat Preferance : </span></td>
+            	<td>
+            		<br><select name="seat" required>
+					<option value="Window">Window</option>
+					<option value="Middle">Middle</option>
+					<option value="Isle">Isle</option>
+					</select>	
+            	</td>
+            </tr>
+
+			<tr>
+            	<td><span style="color:white;">Meal Preferance : </span></td>
+            	<td>
+            		<br><select name="meal" required>
+					<option value="Vegetarian">Vegetarian</option>
+					<option value="Non Vegetarian">Non Vegetarian</option>
+				    </select>
+            	</td>
+            </tr> 
+		</table>
+		<tr>
+			<td>
+				<input type="submit" value="Book" class="button" onclick="alert('Ticket Booked successfully, Happy Journey...')">	
+			</td>
+		</tr>
+		</center>
+		</form>
+	</div>
+	</body>
+</html>
