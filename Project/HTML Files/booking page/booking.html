@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			background: url("9.jpg") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font-family: Tahoma,sans-serif;
+		}
+
+	</style>
+
+</head>
+<body>
+	<p><span style="color:red;font-weight:bold;font-size: 50px;">ABC</span> 
+	<span style="color:lightblue;font-weight:bold;font-size: 20px;">Airline</span>
+	</p>
+		<div class="book">
+			<center>
+				<h1><span style="color:red;">Ticket Booking</span></h1>
+				<form action="">
+					<table class="details">
+						<div class="blank">
+						<tr>
+							<td><span style="color:white;">PNR Number : </span></td>
+							<td>
+								<br><input type="text" name="PNR">
+							</td>
+						</tr>
+
+						<tr>
+							<td><span style="color:white;">Travel Date :</span></td>
+							<td>
+								<br><input type="date" id="start" name="trip-start" value="2021-07-22"min="2021-01-01" max="2021-12-31"  >
+							</td>
+						</tr>
+
+						<tr>
+							<td><span style="color:white;">Source Airport :</span></td>
+							<td>
+								<br><select id="Source Airport" >
+									<option value="TVM">Trivandrum</option>
+									<option value="CON">Cochin</option>
+									<option value="CHN">Chennai</option>
+									<option value="BNGLR">Bangalore</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td><span style="color:white;">Destination Airport :</span></td>
+							<td>
+								<br><select id="Destination Airport">
+									<option value="TVM">Trivandrum</option>
+									<option value="CON">Cochin</option>
+									<option value="CHN">Chennai</option>
+									<option value="BNGLR">Bangalore</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td><span style="color:white;">Ticket Status : </span></td>
+							<td>
+								<br><select id="Status">
+									<option value="new">New</option>
+									<option value="confirm">Confirm</option>
+									<option value="hold">Hold</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td><span style="color:white;">Seat Preferance : </span></td>
+							<td>
+								<br><select id="Seat Preferance">
+									<option value="win">Window</option>
+									<option value="mid">Middle</option>
+									<option value="isl">Isle</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td><span style="color:white;">Meal Preferance : </span></td>
+							<td>
+								<br><select id="Meal Preferance">
+									<option value="veg">Vegetarian</option>
+									<option value="nonveg">Non Vegetarian</option>
+								</select>
+							</td>
+					    </tr>
+                        </div>
+                    </table>
+
+                    <center>
+                    	<tr>
+					    	<td>
+					    		<input type="submit" name="Rsubmit" value="Register" class="button">
+					    	</td>
+					    </tr>
+                    </center>
+			</center>	
+	            </form>
+	     
+	    </div>
+
+</body>
+</html>
