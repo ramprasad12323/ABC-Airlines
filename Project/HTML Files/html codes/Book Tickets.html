@@ -1,0 +1,51 @@
+<html>
+
+	<body>
+
+		<td>
+		<div class="text-center">
+<p style="font-size:30px">Ticket Reservation </p>
+				</div>
+	</td>
+		<form class='form-inline selectionForm'>
+			<div class="form-group required">
+				<label for="name">PNR No:</label> 
+<input type="text" class="form-control" id='name' placeholder=" " required="required"/>
+			
+			</div>
+			<div class="form-group required"> <br>
+				<label for="seats">Travel Date:</label>
+<input type="date" class="form-control" id='name' placeholder=" " required="required"/>
+			</div>
+<div class="form-group required"> <br>
+				<label for="seats">Source:</label>
+<input type="text" class="form-control" id='name' placeholder=" " required="required"/>
+			</div>
+<div class="form-group required"> <br>
+				<label for="seats">Destination :</label>
+<input type="text" class="form-control" id='name' placeholder=" " required="required"/>
+			</div><br>
+<label for="Seat Preference">Seat Preference:</label> 
+  <select name="cars" id="cars">
+    <option value="Window">Window</option>
+    <option value="Middle">Middle</option>
+    <option value="Aisle">Aisle</option>
+  </select> 
+<label for="Meal Preference">Meal Preference:</label>
+  <select name="Meal Preference" id="cars">
+    <option value="Veg">Veg</option>
+    <option value="Non Veg">Non Veg</option>
+  </select>
+
+			<div class="text-center"> <br> <br>
+				<button type="button" autofocus onclick="alert('Ticket Booked successfully, Happy Journey...')">Book Ticket</button>
+			</div>
+			<div class="text-center">
+				<font color="Red"><label class="error"></label></font>
+			</div>
+
+</form>
+
+		</body>
+		
+</html>
