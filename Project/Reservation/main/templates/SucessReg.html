@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Successful</title>
+	<link rel="stylesheet" href="{% static 'style4.css'%}">
+	<style> 
+		body {
+			background: url("{% static '4.jpg'%}") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font-family: Tahoma,sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<p><span style="color:red;font-weight:bold;font-size: 50px;">ABC</span> 
+		<span style="color:lightblue;font-weight:bold;font-size: 20px;">Airline</span></p>
+	<center>
+		<h2><span style="color:darkblue;font-weight:bold">Passenger Registration</span></h2>
+		<h4><span style="color:rgb(6, 97, 3);font-weight:bold">Passenger Registration successful, Login to the application using your username and password </span></h4>
+		<center>
+			<a type="submit" href= "/login/" class="button">Back to Login</a>
+		</center>
+	</center>
+</body>
+</html>
