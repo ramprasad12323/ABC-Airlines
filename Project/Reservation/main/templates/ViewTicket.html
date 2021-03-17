@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABC Airline - Bookings</title>
+  <link rel="stylesheet" href="{% static 'style5.css'%}">
+  <style>   
+      body {
+      background: url("{% static '5.jpg'%}") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: Tahoma,sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <p><span style="color:red;font-weight:bold;font-size: 50px;font-family: Tahoma,sans-serif;">ABC</span> 
+    <span style="color:lightblue;font-weight:bold;font-size: 20px;font-family: Tahoma,sans-serif;">Airline</span>
+  </p>
+	<center>
+    <p style="font-size:30px;color:red;font-weight:bold;opacity: 0.75;"> Booking History </p>
+		
+		<form>
+            <table style="width:100%">
+                <tr>
+                  <th style="text-align:left"><span style="color:red;">PNR</span></th>
+                  <th style="text-align:left"><span style="color:red;">Date</span></th>
+                  <th style="text-align:left"><span style="color:red;">Source</span></th>
+                  <th style="text-align:left"><span style="color:red;">Destination</span></th>
+                  <th style="text-align:left"><span style="color:red;">Seat</span></th>
+                  <th style="text-align:left"><span style="color:red;">Meal</span></th>
+                </tr>
+
+                {% for a in name %}
+                <tr>
+                  <td><span style="color:white;">{{a.travel_pnr}}</span></td>
+                  <td><span style="color:white;">{{a.travel_date}}</span></td>
+                  <td><span style="color:white;">{{a.travel_source}}</span></td>
+                  <td><span style="color:white;">{{a.travel_destination}}</span></td>
+                  <td><span style="color:white;">{{a.seat_pre}}</span></td>
+                  <td><span style="color:white;">{{a.seat_meal}}</span></td>
+                </tr>
+                {% endfor %}
+              </table>
+		</form>
+	</center>
+</body>
+</html>
