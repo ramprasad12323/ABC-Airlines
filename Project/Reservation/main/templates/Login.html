@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABC Airline - Login</title>
+	<link rel="stylesheet" href="{% static 'style1.css'%}">
+	<style>
+		body {
+			background: url("{% static '1.jpg'%}") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font-family: Tahoma,sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<span style="color:red;font-weight:bold;font-size: 50px;">ABC</span> 
+		<span style="color:lightblue;font-weight:bold;font-size: 20px;">Airline</span>
+	</p>
+	<div class="form-area">
+	<center>
+		<h2><span style="color:red;font-weight:bold;">Login Here</span></h2>
+		<form action="/validation/" method="POST">
+			{%csrf_token%}
+			<table>
+				<tr>
+					<td><span style="color:white;">Username :</span></td>
+					<td><input type="text" name="user" placeholder="Enter Username" required></td>
+				</tr>
+				<tr>
+					<br>
+					<td><br><span style="color:white;opacity: 0.8;">Password :</span></td>
+					<td>
+						<br>
+						<input type="password" name="pass" placeholder="Enter Password" required>
+					</td>
+				</tr>
+				<tr>
+			</table>
+
+			<p><input type="submit" value="Login" class="button"></p>
+		</form>
+
+		<center>	
+			<h2><span style="color:red;font-weight:bold;opacity: 0.8">New User</span></h2>
+			<a type="submit" href= "/registration/" class="button">Register</a>		
+		</center>
+	</center>
+
+	</div>
+</body>
+</html>
