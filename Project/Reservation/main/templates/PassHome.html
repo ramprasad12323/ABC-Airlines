@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABC Airline - Home</title>
+	<link rel="stylesheet" href="{% static 'style7.css'%}">
+	<style> 
+		body {
+			background: url("{% static '7.jpg'%}") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			font-family: Tahoma,sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<p><span style="color:red;font-weight:bold;font-size: 50px;font-family: Tahoma,sans-serif;">ABC</span> 
+		<span style="color:lightblue;font-weight:bold;font-size: 20px;font-family: Tahoma,sans-serif;">Airline</span>
+	</p>
+	<center>
+
+		<span style="font-size:50px;font-weight: bold;color: red">Passenger Home Page</span> 
+		<h2><span style="font-size:25px;font-weight: bold;color: red">Welcome {{name}} </span></h2> 
+
+		<form action="">
+			<tr>
+				<div class="h1"><a type="submit" href="/login/" class="button">Logout</a></div>
+			</tr> 
+		</form>
+		
+		<form action="">
+			<tr>
+				<div class="h2"><a type="submit" href="/bookticket/" class="button">Book Tickets</a></div>
+			</tr>
+		</form>
+
+		<form action="">
+			<tr>
+				<div class="h3"><a type="submit" href="/viewticket/" class="button">View Tickets</a></div>
+			</tr>
+		</form>
+		</form>
+	</center>
+
+
+</body>
+</html>
