@@ -1,0 +1,111 @@
+.button {
+  background-color: #00BFFF;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.form-area{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(200%,-50%);
+  width: 400px;
+  height: 450px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.form-area input[type=text],input[type=password] {
+  border :none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  opacity: 1;
+  color: #ccc;
+}
+
+.reg-form input[type=text],input[type=password],input[type=email]{
+  border :none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  opacity: 1;
+  color: #ccc;
+}
+
+.add textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  color: #ccc;
+  width: 100%;
+}
+
+.add textarea{
+  height: 75px;
+}
+
+.regblock{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(75%,-50%);
+  width: 500px;
+  height: 525px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 20px
+}
+
+
+
+.book input,select{
+  margin-bottom: 20px;
+  width: 100%;
+
+}               
+
+.color{
+  color: white;
+  opacity: 0.8;
+}
+                
+.bform{
+  border-collapse:collapse;
+  border-spacing: 0 10px;
+}     
+
+.book{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(40%,-50%);
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  padding: 100px;
+  border-radius: 20px
+
+}  
+
+.details{
+  color red;
+}
+
